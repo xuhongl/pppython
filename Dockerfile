@@ -13,6 +13,8 @@ WORKDIR /app
 # Copy the rest of the application code into the container
 COPY . .
 
+RUN echo "This is the WIZ exercise file content." > /wizexercise.txt
+
 # Expose the port the app runs on
 EXPOSE 5000
 
